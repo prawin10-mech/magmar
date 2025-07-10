@@ -1,24 +1,3 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "next.config.js",
-        "use": "@vercel/next"
-      }
-    ],
-    "rewrites": [
-      { "source": "/old-route", "destination": "/new-route" }
-    ],
-    "redirects": [
-      { "source": "/docs", "destination": "https://external.site.com/docs", "permanent": true }
-    ],
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
-        ]
-      }
-    ]
-  }
-  
+  "buildCommand": "next build"
+}
