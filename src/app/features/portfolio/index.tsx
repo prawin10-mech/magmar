@@ -23,8 +23,8 @@ export default function Portfolio() {
             src="/assets/dashboard.webp"
             alt="dashboard"
             width={850}
-            height={600}
-            className="h-[600px] border border-red-500 rounded-[25px]"
+            height={100}
+            className="h-auto border border-red-500 rounded-[25px]"
             priority={false}
           />
         </div>

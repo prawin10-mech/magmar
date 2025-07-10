@@ -3,7 +3,7 @@ import Navbar from "./features/navbar";
 
 // Next.js 13+ supports this for app directory (optional, for static metadata)
 export const metadata = {
-  title: "Magmar Infra",
+  title: "Cashback Infra",
   description: "An ERC-4337 toolkit for RWA and DePIN enhancing gasless transactions",
 };
 
@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <link rel="icon" href="/assets/favicon.ico" />
-        <title>Magmar Infra</title>
+        <title>Cashback Infra</title>
         <meta
           name="description"
           content="An ERC-4337 toolkit for RWA and DePIN enhancing gasless transactions"

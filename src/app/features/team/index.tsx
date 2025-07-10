@@ -94,75 +94,93 @@ const team: TeamMember[] = [
 ];
 
 const TeamMemberCard = ({ member }: { member: TeamMember }) => (
-  <div className="team-bg rounded-[27px] h-[500px] w-full relative group overflow-hidden cursor-pointer flex-shrink-0">
-    <div className="w-[401px] h-[72px] bg-[#331400] rounded-b-[27px] blur-[40px] absolute -bottom-5" />
-    <Image
-      src={member.image}
-      alt={member.name}
-      fill
-      className="object-cover w-full h-full"
-      style={{ objectFit: "cover", position: "absolute" }}
-      sizes="(max-width: 600px) 100vw, 400px"
-      priority={false}
-    />
-    <div className="absolute bottom-0 left-0 right-0 p-6 rounded-[20px] transition-transform duration-700 ease-in-out transform translate-y-0 group-hover:translate-y-[-400px] z-10 font-[family-name:var(--font-sofia-sans)] bg-gradient-to-t from-black/70 to-transparent">
-      <h3 className="text-[22px] text-[#F7F7F7]">{member.name}</h3>
-      <p className="font-medium text-white uppercase">{member.role}</p>
-    </div>
-    <div className="absolute inset-0 bg-[#AD2A01] rounded-[20px] transform translate-y-full transition-transform duration-700 ease-in-out group-hover:translate-y-0">
-      <div className="relative w-full h-full p-6">
-        {/* Add mask.svg as a background pattern (optional) */}
-        <Image
-          src="/assets/mask.svg"
-          alt="pattern"
-          fill
-          className="absolute object-cover w-full h-full opacity-40"
-          style={{ objectFit: "cover", zIndex: 0 }}
-        />
-        <div className="relative flex flex-col justify-end h-full z-10">
-          <div className="flex gap-3 mt-2">
-            {member.linkedin && member.linkedinUrl && (
-              <a
-                href={member.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-[#000000] transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedinIn size={24} />
-              </a>
-            )}
-            {member.twitter && member.twitterUrl && (
-              <a
-                href={member.twitterUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-[#000000] transition-colors"
-                aria-label="Twitter"
-              >
-                <FaXTwitter size={24} />
-              </a>
-            )}
-            {member.telegram && member.telegramUrl && (
-              <a
-                href={member.telegramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-[#000000] transition-colors"
-                aria-label="Telegram"
-              >
-                <FaTelegramPlane size={24} />
-              </a>
-            )}
+    <div className="team-bg rounded-[27px] h-[500px] w-full relative group overflow-hidden cursor-pointer flex-shrink-0">
+      {/* Shadow/blur at bottom */}
+      <div className="w-[401px] h-[72px] bg-[#331400] rounded-b-[27px] blur-[40px] absolute -bottom-5 left-1/2 -translate-x-1/2 pointer-events-none" />
+  
+      {/* Card Image */}
+      <Image
+        src={member.image}
+        alt={member.name}
+        fill
+        className="object-cover w-full h-full"
+        style={{ objectFit: "cover", position: "absolute" }}
+        sizes="(max-width: 600px) 100vw, 400px"
+        priority={false}
+      />
+  
+      {/* Name & Role: Animates up on hover */}
+      <div className="
+        absolute left-0 right-0 px-6 py-6 z-20 font-[family-name:var(--font-sofia-sans)]
+        bg-gradient-to-t from-black/70 to-transparent
+        rounded-t-[27px]
+        bottom-0
+        transition-transform duration-700 ease-in-out
+        translate-y-0
+        group-hover:translate-y-[-200px] md:group-hover:translate-y-[-440px]
+        " // Responsive tweak: may need to tune [-420px] for perfect top position
+        style={{ willChange: "transform" }}
+      >
+        <h3 className="text-[22px] text-[#F7F7F7] font-bold">{member.name}</h3>
+        <p className="font-medium text-white uppercase">{member.role}</p>
+      </div>
+  
+      {/* Hover Overlay (bio & socials) */}
+      <div className="absolute inset-0 bg-[#AD2A01] rounded-[20px] transform translate-y-full transition-transform duration-700 ease-in-out group-hover:translate-y-0 z-10 overflow-hidden">
+        <div className="relative w-full h-full p-6 pt-28">
+          {/* Mask background */}
+          <Image
+            src="/assets/mask.svg"
+            alt="pattern"
+            fill
+            className="absolute object-cover w-full h-full opacity-40"
+            style={{ objectFit: "cover", zIndex: 0 }}
+          />
+          <div className="relative flex flex-col justify-end h-full z-10">
+            <div className="flex gap-3 mt-2">
+              {member.linkedin && member.linkedinUrl && (
+                <a
+                  href={member.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#000000] transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedinIn size={24} />
+                </a>
+              )}
+              {member.twitter && member.twitterUrl && (
+                <a
+                  href={member.twitterUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#000000] transition-colors"
+                  aria-label="Twitter"
+                >
+                  <FaXTwitter size={24} />
+                </a>
+              )}
+              {member.telegram && member.telegramUrl && (
+                <a
+                  href={member.telegramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#000000] transition-colors"
+                  aria-label="Telegram"
+                >
+                  <FaTelegramPlane size={24} />
+                </a>
+              )}
+            </div>
+            <p className="text-white font-[family-name:var(--font-sofia-sans)] mt-4 text-sm leading-relaxed">
+              {member.bio}
+            </p>
           </div>
-          <p className="text-white font-[family-name:var(--font-sofia-sans)] mt-4 text-sm leading-relaxed">
-            {member.bio}
-          </p>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+  
 
 const getCardWidth = () => {
   if (typeof window !== "undefined") {

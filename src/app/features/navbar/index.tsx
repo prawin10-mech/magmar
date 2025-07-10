@@ -180,13 +180,13 @@ const Navbar: React.FC = () => {
               <Image
                 className={`transition-all duration-500 ${isScrolled ? "w-fit h-10" : "w-fit h-12"} object-contain`}
                 src="/assets/logo.17c595847422deb7abc3.png"
-                alt="Magmar logo"
+                alt="Cashback logo"
                 width={48}
                 height={48}
                 priority
               />
               <h4 className={`font-bold text-[#fd1d1d] transition-all duration-500 ${isScrolled ? "text-xl" : "text-2xl"}`}>
-                Magmar
+                Cashback
               </h4>
             </Link>
             {/* Desktop Navigation */}
