@@ -1,4 +1,4 @@
-import { motion, useTransform } from "framer-motion";
+import { motion, useTransform, MotionValue } from "framer-motion";
 import { useRef } from "react";
 
 interface CardProps {
@@ -9,7 +9,7 @@ interface CardProps {
   src: string;
   url: string;
   color: string;
-  progress:any;
+  progress: MotionValue<number>;
   range: number[];
   targetScale: number;
 }
@@ -19,8 +19,6 @@ const Card = ({
   title,
   description,
   imageUrl,
-  src,
-  url,
   color,
   progress,
   range,

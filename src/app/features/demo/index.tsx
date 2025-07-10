@@ -5,7 +5,7 @@ export default function DemoPreview() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [playingVideos, setPlayingVideos] = useState({});
 
-  const [selectedVideo, setSelectedVideo] = useState(null);
+//   const [selectedVideo, setSelectedVideo] = useState(null);
 
   // Add headers array corresponding to each video
   const headers = [
@@ -24,7 +24,7 @@ export default function DemoPreview() {
 
   const containerRef = useRef(null);
 
-  const scrollToVideo = (index: any) => {
+  const scrollToVideo = (index: number) => {
     setCurrentIndex(index);
     const container = containerRef.current;
     if (!container) return;
@@ -44,8 +44,8 @@ export default function DemoPreview() {
 
   const handleVideoPlay = (index: number) => {
     setCurrentIndex(index);
-    const videoUrl = videos[index] + "&autoplay=1";
-    setSelectedVideo(videoUrl as any);
+    // const videoUrl = videos[index] + "&autoplay=1";
+    // setSelectedVideo(videoUrl as any);
     setPlayingVideos((prev) => ({ ...prev, [index]: true }));
 
     // Scroll to center the video container
@@ -75,7 +75,7 @@ export default function DemoPreview() {
           className="fixed inset-0 bg-black/30 z-[150]"
           onClick={() => {
             const playingIndex = Object.entries(playingVideos).find(
-              ([_, isPlaying]) => isPlaying
+              ([, isPlaying]) => isPlaying
             )?.[0];
             if (playingIndex !== undefined) {
               setPlayingVideos((prev) => ({ ...prev, [playingIndex]: false }));

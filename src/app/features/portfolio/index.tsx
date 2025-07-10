@@ -19,11 +19,13 @@ export default function Portfolio() {
           </p>
         </div>
         <div className="flex justify-center mt-[2%] px-[6%]">
-        <img
-           src="/assets/dashboard.webp"
-            className="sm:h-[600px]   border border-red-500 rounded-[25px]"
+          <Image
+            src="/assets/dashboard.webp"
             alt="dashboard"
-            loading="lazy"
+            width={850}
+            height={600}
+            className="h-[600px] border border-red-500 rounded-[25px]"
+            priority={false}
           />
         </div>
       </div>

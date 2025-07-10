@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
+import Image from "next/image"
 
 const mediaKitItems = [
   {
@@ -138,7 +139,7 @@ export default function MediaKitPage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: any) => {
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -219,9 +220,11 @@ export default function MediaKitPage() {
                     <div className="p-4 mb-12 border sm:p-6 bg-white/5 rounded-xl border-white/10 backdrop-blur-sm">
                       <div className="flex items-center justify-center w-full h-48 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-xl">
                         <div className="text-center">
-                          <img
+                          <Image
                             src="/assets/logo.png"
                             alt="Magmar Logo"
+                            width={80}
+                            height={80}
                             className="mx-auto size-14 lg:size-20"
                           />
                           <h3 className="mb-2 text-xl font-medium text-white">

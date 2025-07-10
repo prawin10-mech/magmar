@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image"
 import Content from "../content";
 
 const Feature = () => {
@@ -118,10 +119,11 @@ const Feature = () => {
                     {" "}
                     {item.title}
                   </h5>
-                  <img
-                    className=" absolute md:flex hidden  left-0 w-full h-full object-cover rounded-[16px]"
+                  <Image
+                    className="absolute md:flex hidden left-0 w-full h-full object-cover rounded-[16px]"
                     src={item.background}
                     alt="background"
+                    fill
                   />
                 </div>
               ))}
@@ -141,10 +143,11 @@ const Feature = () => {
                     {" "}
                     {item.title}
                   </h5>
-                  <img
-                    className="absolute md:flex hidden  left-0 w-full h-full object-cover rounded-[16px]"
+                  <Image
+                    className="absolute md:flex hidden left-0 w-full h-full object-cover rounded-[16px]"
                     src={item.background}
                     alt="background"
+                    fill
                   />
                 </div>
               ))}
@@ -164,10 +167,11 @@ const Feature = () => {
                     {" "}
                     {item.title}
                   </h5>
-                  <img
-                    className="absolute md:flex hidden  left-0 w-full h-full object-cover rounded-[16px]"
+                  <Image
+                    className="absolute md:flex hidden left-0 w-full h-full object-cover rounded-[16px]"
                     src={item.background}
                     alt="background"
+                    fill
                   />
                 </div>
               ))}

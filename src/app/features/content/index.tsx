@@ -15,7 +15,7 @@ const Content = ({
     <div
       className="relative bg-[#3a3a3a] py-[5%] px-[4%] rounded-xl"
       style={{
-        backgroundImage: "url('/assets/bg.6ec3205349cc3c90b87262679bdfb72f.svg')",
+        backgroundImage: "url('/assets/bg.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

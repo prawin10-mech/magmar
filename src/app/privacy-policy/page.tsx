@@ -17,11 +17,11 @@ export default function PrivacyPolicy() {
             <strong>Website:</strong> https://www.magmarinfra.com
           </p>
           <p className="mb-8">
-            Magmar Infra LLC ("Magmar," "we," "us," or "our") respects your
+            Magmar Infra LLC (&quot;Magmar,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your
             privacy. This Privacy Policy outlines how we collect, use, and
             protect your information when you interact with our website,
             infrastructure tools, APIs, smart wallet SDKs, and related services
-            (collectively, the "Services").
+            (collectively, the &quot;Services&quot;).
           </p>
           <p className="mb-8">
             By accessing or using our Services, you agree to the collection and
@@ -154,7 +154,7 @@ export default function PrivacyPolicy() {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">
-              8. Children's Privacy
+              8. Children&apos;s Privacy
             </h2>
             <p>
               Magmar Infra does not knowingly collect or solicit data from

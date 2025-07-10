@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -112,7 +114,18 @@ export default function BlogPage() {
 }
 
 // Featured Post Card Component
-function FeaturedPostCard({ post }: { post: any }) {
+function FeaturedPostCard({ post }: { post: {
+  id: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  author: string;
+  date: string;
+  category: string;
+  readTime: string;
+} }) {
   return (
     <Link href={`/blog/${post.slug}`} className="block group">
       <div className="overflow-hidden transition-all duration-500 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-orange-500/5 hover:border-orange-500/20">
@@ -175,7 +188,18 @@ function FeaturedPostCard({ post }: { post: any }) {
 }
 
 // Regular Blog Post Card Component
-function BlogPostCard({ post }: { post: any }) {
+function BlogPostCard({ post }: { post: {
+  id: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  author: string;
+  date: string;
+  category: string;
+  readTime: string;
+} }) {
   return (
     <Link href={`/blog/${post.slug}`} className="block h-full group">
       <div className="flex flex-col h-full overflow-hidden transition-all duration-300 border rounded-lg border-white/10 bg-white/5 backdrop-blur-sm hover:bg-orange-500/5 hover:border-orange-500/20">
@@ -231,3 +255,5 @@ const socialLinks = [
     icon: FaTelegramPlane,
   },
 ];
+
+

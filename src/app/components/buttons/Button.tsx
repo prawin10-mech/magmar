@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function Button({ text, variant = "primary", className="", type = '' }: {text:string, variant?:string, className?:string, type?:string}) {
+export default function Button({ text, variant = "primary" }: {text:string, variant?:string, className?:string, type?:string}) {
   return (
     <div className="button-container">
       {" "}

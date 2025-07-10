@@ -175,7 +175,7 @@ const faqCategories = [
 
 export default function FAQSPage() {
   const [activeSection, setActiveSection] = useState("");
-  const [expandedQuestion, setExpandedQuestion] = useState(null);
+  const [expandedQuestion, setExpandedQuestion] = useState<string | null>(null);
 
   // Flatten all questions for navigation
   const allQuestions = faqCategories.flatMap((category) =>
@@ -206,14 +206,14 @@ export default function FAQSPage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [allQuestions]);
 
-  const scrollToSection = (id: any) => {
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
-  const toggleQuestion = (questionId: any) => {
+  const toggleQuestion = (questionId: string) => {
     setExpandedQuestion(expandedQuestion === questionId ? null : questionId);
   };
 

@@ -18,7 +18,7 @@ export default function TermsOfService() {
           </p>
           <p className="mb-8">
             These Terms of Service govern your access to and use of Magmar
-            Infra's website, products, and services. By using our
+            Infra&apos;s website, products, and services. By using our
             infrastructure, software development kits, and smart wallet tooling,
             you acknowledge that you have read, understood, and agree to be
             legally bound by these terms.
@@ -47,7 +47,7 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">2. Eligibility</h2>
             <p>
-              To access or use Magmar Infra's services, you must be at least 18
+              To access or use Magmar Infra&apos;s services, you must be at least 18
               years of age and possess the legal capacity to enter into binding
               agreements. If you are accessing the services on behalf of an
               organization, you affirm that you are authorized to act on its
@@ -80,13 +80,13 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">4. Acceptable Use</h2>
             <p className="mb-4">
-              You agree not to misuse Magmar Infra's services. Misuse includes
+              You agree not to misuse Magmar Infra&apos;s services. Misuse includes
               but is not limited to:
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li>Deploying malicious or illegal smart contracts</li>
               <li>
-                Attempting to exploit or interfere with the platform's security
+                Attempting to exploit or interfere with the platform&apos;s security
               </li>
               <li>
                 Using the infrastructure for unlawful, deceptive, or harmful
@@ -115,7 +115,7 @@ export default function TermsOfService() {
             </p>
             <p>
               You are responsible for any gas fees or on-chain transaction costs
-              associated with using Magmar's tools or deploying smart contracts.
+              associated with using Magmar&apos;s tools or deploying smart contracts.
             </p>
           </section>
 

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from "react";
-import { useRouter, useParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -10,13 +10,12 @@ import bg from "@/modules/home/assets/bg.svg"; // Must be imported or public/sta
 import Image from "next/image";
 
 
-const getBlogPost = (slug: any) => {
+const getBlogPost = (slug: string) => {
   return blogPosts.find((post) => post.slug === slug);
 };
 
 export default function BlogDetailsPage() {
   const params = useParams();
-  const router = useRouter();
   const slug = typeof params.slug === "string" ? params.slug : Array.isArray(params.slug) ? params.slug[0] : "";
   const post = getBlogPost(slug);
 
