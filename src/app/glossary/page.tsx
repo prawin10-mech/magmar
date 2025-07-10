@@ -342,7 +342,7 @@ export default function GlossaryPage() {
       <div
         className="min-h-screen pt-[200px] bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: `url(/assets/bg.6ec3205349cc3c90b87262679bdfb72f.svg)`,
+          backgroundImage: `url(/assets/bg.svg)`,
         }}
       >
         <div className="max-w-[1280px] mx-auto flex relative">

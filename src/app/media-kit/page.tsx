@@ -159,7 +159,7 @@ export default function MediaKitPage() {
   return (
     <div className="min-h-screen text-white">
        <div
-        className="min-h-screen pt-[200px] bg-[url('/assets/bg.6ec3205349cc3c90b87262679bdfb72f.svg')] bg-cover bg-center bg-no-repeat bg-fixed"
+        className="min-h-screen pt-[200px] bg-[url('/assets/bg.svg')] bg-cover bg-center bg-no-repeat bg-fixed"
       >
         <div className="max-w-[1280px] mx-auto flex relative">
           {/* Sidebar Navigation */}

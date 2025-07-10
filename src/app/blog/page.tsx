@@ -12,7 +12,7 @@ export default function BlogPage() {
       <div
         className="min-h-screen pt-[200px]"
         style={{
-          backgroundImage: `url/assets/bg.6ec3205349cc3c90b87262679bdfb72f.svg)`,
+          backgroundImage: `url/assets/bg.svg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

@@ -4,7 +4,7 @@ export default function TermsOfService() {
   return (
     <div className="text-white min-h-screen">
       <div
-        className="min-h-screen pt-[200px] bg-[url('/assets/bg.6ec3205349cc3c90b87262679bdfb72f.svg')] bg-cover bg-center bg-no-repeat bg-fixed"
+        className="min-h-screen pt-[200px] bg-[url('/assets/bg.svg')] bg-cover bg-center bg-no-repeat bg-fixed"
       >
         <div className="max-w-[1440px] mx-auto px-4 py-8">
           <h1 className="text-3xl font-bold mb-8">Terms of Service</h1>
