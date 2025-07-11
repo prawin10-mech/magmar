@@ -20,7 +20,7 @@ export default function Portfolio() {
         </div>
         <div className="flex justify-center mt-[2%] px-[6%]">
           <Image
-            src="/assets/dashboard.pngapp"
+            src="/assets/dashboard.png"
             alt="dashboard"
             width={850}
             height={100}
