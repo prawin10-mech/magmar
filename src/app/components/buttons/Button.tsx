@@ -19,8 +19,8 @@ export default function Button({
       <div className="sm:mt-[1%] mt-[3%] items-center gap-5">
         <motion.button
           type={type}
-          initial={{ "--x": "100%", scale: 1 } as any}
-          animate={{ "--x": "-100%" } as any}
+          initial={{ "--x": "100%", scale: 1 }}
+          animate={{ "--x": "-100%" }}
           whileTap={{ scale: 0.97 }}
           transition={{
             repeat: Infinity,
