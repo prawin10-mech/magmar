@@ -92,7 +92,7 @@ const Feature = () => {
 
 
   return (
-    <div className="px-[5%] " id="features">
+    <div className="px-[5%]" id="features">
       <div className="grid sm:grid-cols-5 grid-cols-1 sm:gap-4">
         <div className="col-span-2 sm:mb-0 mb-4">
           <Content
@@ -109,14 +109,12 @@ const Feature = () => {
                   key={index}
                   onClick={() => setSelectedTab(index)}
                   ref={index === 0 ? firstBtnRef : null}
-                  className={`relative  cursor-pointer  w-full sm:h-[250px] h-[40px]   uppercase sm:text-[20px] font-semibold  rounded-[16px] ${
-                    selectedTab === index
-                      ? " text-white border border-[#fd1d1d]"
-                      : " text-white"
-                  }`}
+                  className={`relative cursor-pointer w-full sm:h-[250px] h-[40px] uppercase sm:text-[20px] font-semibold rounded-[16px] ${selectedTab === index
+                      ? "text-white border border-[#18714b]"
+                      : "text-white"
+                    }`}
                 >
                   <h5 className="absolute sm:top-[4%] top-[20%] left-[4%] z-[10] ">
-                    {" "}
                     {item.title}
                   </h5>
                   <Image
@@ -133,14 +131,12 @@ const Feature = () => {
                 <div
                   key={index + 3}
                   onClick={() => setSelectedTab(index + 3)}
-                  className={`relative cursor-pointer  w-full sm:h-[250px] h-[40px] uppercase sm:text-[20px] font-semibold rounded-[16px] hover:border-[2px] hover:border-[#3a3a3a] ${
-                    selectedTab === index + 3
-                      ? " text-white border border-[#fd1d1d]"
+                  className={`relative cursor-pointer w-full sm:h-[250px] h-[40px] uppercase sm:text-[20px] font-semibold rounded-[16px] hover:border-[2px] hover:border-[#18714b] ${selectedTab === index + 3
+                      ? "text-white border border-[#18714b]"
                       : "text-white"
-                  }`}
+                    }`}
                 >
                   <h5 className="absolute sm:top-[4%] top-[20%] left-[4%] z-[10] ">
-                    {" "}
                     {item.title}
                   </h5>
                   <Image
@@ -157,14 +153,12 @@ const Feature = () => {
                 <div
                   key={index + 6}
                   onClick={() => setSelectedTab(index + 6)}
-                  className={`relative cursor-pointer  w-full sm:h-[250px] h-[40px] uppercase sm:text-[20px] font-semibold rounded-[16px] hover:border-[2px] hover:border-[#3a3a3a] ${
-                    selectedTab === index + 6
-                      ? " text-white border border-[#fd1d1d]"
+                  className={`relative cursor-pointer w-full sm:h-[250px] h-[40px] uppercase sm:text-[20px] font-semibold rounded-[16px] hover:border-[2px] hover:border-[#18714b] ${selectedTab === index + 6
+                      ? "text-white border border-[#18714b]"
                       : "text-white"
-                  }`}
+                    }`}
                 >
                   <h5 className="absolute sm:top-[4%] top-[20%] left-[4%] z-[10] ">
-                    {" "}
                     {item.title}
                   </h5>
                   <Image
@@ -181,6 +175,7 @@ const Feature = () => {
       </div>
     </div>
   );
+
 };
 
 export default Feature;

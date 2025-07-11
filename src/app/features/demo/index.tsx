@@ -5,7 +5,7 @@ export default function DemoPreview() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [playingVideos, setPlayingVideos] = useState({});
 
-//   const [selectedVideo, setSelectedVideo] = useState(null);
+  //   const [selectedVideo, setSelectedVideo] = useState(null);
 
   // Add headers array corresponding to each video
   const headers = [
@@ -105,9 +105,8 @@ export default function DemoPreview() {
               `}
             >
               <div
-                className={`border border-[#ffffff2e] rounded-[20px] transition-all duration-300 relative md:h-[370px] ${
-                  currentIndex === index ? "md:scale-110" : "md:scale-90"
-                }`}
+                className={`border border-[#ffffff2e] rounded-[20px] transition-all duration-300 relative md:h-[370px] ${currentIndex === index ? "md:scale-110" : "md:scale-90"
+                  }`}
               >
                 {video.includes("youtube.com") || video.includes(".mp4") ? (
                   <iframe
@@ -192,12 +191,12 @@ export default function DemoPreview() {
             onClick={() => scrollToVideo(index)}
             className={`
               w-[35px] h-[35px] flex items-center justify-center text-white border
-              ${
-                currentIndex === index
-                  ? "border-[#FD1D1D]"
-                  : "border-[#ffffff2e]"
+              ${currentIndex === index
+                ? "border-[#18714b]"
+                : "border-[#ffffff2e]"
               }
-              hover:border hover:border-[#FD1D1D] transition-colors rounded-full
+hover:border hover:border-[#18714b] transition-colors rounded-full
+
             `}
           >
             {index + 1}

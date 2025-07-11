@@ -174,7 +174,7 @@ export default function MediaKitPage() {
                   onClick={() => scrollToSection(section.id)}
                   className={`block w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
                     activeSection === section.id
-                      ? "bg-orange-500/20 text-orange-500 border border-orange-500/30"
+                      ? "bg-emerald-500/20 text-emerald-500 border border-emerald-500/30"
                       : "text-white/70 hover:text-white hover:bg-white/5"
                   }`}
                 >
@@ -218,7 +218,7 @@ export default function MediaKitPage() {
                   {/* Assets Preview */}
                   {section.id === "magmar-brand-assets" && (
                     <div className="p-4 mb-12 border sm:p-6 bg-white/5 rounded-xl border-white/10 backdrop-blur-sm">
-                      <div className="flex items-center justify-center w-full h-48 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-xl">
+                      <div className="flex items-center justify-center w-full h-48 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-xl">
                         <div className="text-center">
                           <Image
                             src="/assets/logo.png"
@@ -272,7 +272,7 @@ export default function MediaKitPage() {
 
                   {section.id === "magmar-video-assets" && (
                     <div className="p-4 mb-12 border sm:p-6 bg-white/5 rounded-xl border-white/10 backdrop-blur-sm">
-                      <div className="flex items-center justify-center w-full h-48 bg-gradient-to-r from-red-500/20 to-pink-600/20 rounded-xl">
+                      <div className="flex items-center justify-center w-full h-48 bg-gradient-to-r from-emerald-500/20 to-lime-600/20 rounded-xl">
                         <div className="text-center">
                           <div className="text-4xl mb-2">🎬</div>
                           <h3 className="mb-2 text-xl font-medium text-white">
@@ -291,13 +291,13 @@ export default function MediaKitPage() {
                     {section.items.map((item) => (
                       <div
                         key={item.id}
-                        className="overflow-hidden transition-all duration-300 border rounded-lg group border-white/10 bg-white/5 backdrop-blur-sm hover:border-orange-500/30"
+                        className="overflow-hidden transition-all duration-300 border rounded-lg group border-white/10 bg-white/5 backdrop-blur-sm hover:border-emerald-500/30"
                       >
                         <div className="p-6">
                           <div className="flex items-start gap-4">
                             <div className="text-2xl">{item.icon}</div>
                             <div className="flex-1">
-                              <h3 className="mb-2 text-xl font-medium text-white transition-colors group-hover:text-orange-500">
+                              <h3 className="mb-2 text-xl font-medium text-white transition-colors group-hover:text-emerald-500">
                                 {item.title}
                               </h3>
                               <p className="mb-4 text-sm leading-relaxed text-white/70">
@@ -307,7 +307,7 @@ export default function MediaKitPage() {
                                 onClick={() =>
                                   handleDownload(item.downloadUrl, item.title)
                                 }
-                                className="inline-flex items-center gap-2 text-sm font-medium text-orange-500 transition-colors hover:text-orange-400"
+                                className="inline-flex items-center gap-2 text-sm font-medium text-emerald-500 transition-colors hover:text-emerald-400"
                               >
                                 <svg
                                   className="w-4 h-4"

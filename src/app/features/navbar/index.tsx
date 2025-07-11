@@ -170,24 +170,27 @@ const Navbar: React.FC = () => {
   return (
     <div className="relative">
       <div className={`fixed w-full z-[100000] transition-all duration-500 ${isScrolled ? "" : "bg-transparent"}`}>
-        <div className={`transition-all duration-500 ${
-          isScrolled
-            ? "max-w-[1100px] md:mx-auto mx-5 rounded-full mt-4 bg-black/90 backdrop-blur-md border border-white/10"
-            : "md:max-w-[1440px] md:mx-auto border border-transparent md:bg-transparent bg-black mx-5 md:mt-0 mt-5 md:rounded-none rounded-full"
-        }`}>
+        <div className={`transition-all duration-500 ${isScrolled
+          ? "max-w-[1100px] md:mx-auto mx-5 rounded-full mt-4 bg-black/90 backdrop-blur-md border border-white/10"
+          : "md:max-w-[1440px] md:mx-auto border border-transparent md:bg-transparent bg-black mx-5 md:mt-0 mt-5 md:rounded-none rounded-full"
+          }`}>
           <div className={`flex justify-between items-center transition-all duration-500 ${isScrolled ? "py-3 px-8" : "md:py-6 py-2 px-[5%]"}`}>
             <Link href="/" className="flex items-center">
               <Image
                 className={`transition-all duration-500 ${isScrolled ? "w-fit h-10" : "w-fit h-12"} object-contain`}
-                src="/assets/logo.17c595847422deb7abc3.png"
+                src="/assets/logo.png"
                 alt="Cashback logo"
                 width={48}
                 height={48}
                 priority
               />
-              <h4 className={`font-bold text-[#fd1d1d] transition-all duration-500 ${isScrolled ? "text-xl" : "text-2xl"}`}>
-                Cashback
-              </h4>
+             <h4 className={`font-bold text-[#21b573] transition-all duration-500 ${isScrolled ? "text-xl" : "text-2xl"}`}>
+  Magmar
+</h4>
+
+
+
+
             </Link>
             {/* Desktop Navigation */}
             <nav className="hidden md:block">
@@ -266,7 +269,7 @@ const Navbar: React.FC = () => {
               >
                 <Button
                   text="Build with us"
-                  className="transition-transform duration-300 transform rounded-full hover:scale-105"
+                  className="transition-transform duration-300 transform  hover:scale-105"
                   variant="secondary"
                   type="button"
                 />
@@ -396,7 +399,7 @@ const Navbar: React.FC = () => {
             >
               <Button
                 text="Build with us"
-                className="w-full transition-transform duration-300 transform rounded-full hover:scale-105"
+                className="w-full transition-transform duration-300 transform hover:scale-105"
                 variant="secondary"
               />
             </a>

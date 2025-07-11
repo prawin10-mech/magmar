@@ -24,7 +24,7 @@ export default function Portfolio() {
             alt="dashboard"
             width={850}
             height={100}
-            className="h-auto border border-red-500 rounded-[25px]"
+            className="h-auto border border-green-500 rounded-[25px]"
             priority={false}
           />
         </div>

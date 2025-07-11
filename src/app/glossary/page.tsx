@@ -359,7 +359,7 @@ export default function GlossaryPage() {
                     onClick={() => scrollToSection(term.id)}
                     className={`block w-full text-left px-3 py-2 text-sm rounded transition-all duration-200 hover:bg-white/5 hover:text-white ${
                       activeSection === term.id
-                        ? "text-orange-500 bg-orange-500/10 border-l-2 border-orange-500"
+                        ? "text-emerald-500 bg-emerald-500/10 border-l-2 border-emerald-500"
                         : "text-white/70"
                     }`}
                   >

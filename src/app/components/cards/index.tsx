@@ -39,7 +39,7 @@ const Card = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="flex flex-col sm:inline items-center relative sm:h-[470px] h-fit w-full rounded-[25px] sm:p-[50px] p-[5%] origin-top border border-[#353637] overflow-hidden bg-gradient-to-br from-black via-black to-red-900/20"
+        className="flex flex-col sm:inline items-center relative sm:h-[470px] h-fit w-full rounded-[25px] sm:p-[50px] p-[5%] origin-top border border-[#353637] overflow-hidden bg-gradient-to-br from-black via-black to-[#18714b]/20"
       >
         <div className="absolute inset-0  bg-black z-[40] rounded-[40px]"></div>
         <video

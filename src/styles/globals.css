@@ -2220,9 +2220,21 @@ body {
 }
 
 .team-bg {
-    background: linear-gradient(0deg, #0003, #0003), linear-gradient(180deg, #300, #ff8c5e 133.62%);
-    border-radius: 16px
+    background: linear-gradient(0deg, #0003, #0003), linear-gradient(180deg, #12482e, #18714b 133.62%);
+    border-radius: 16px;
 }
+
+.custom-green {
+  color: #32D374 !important;
+}
+.custom-green-bg {
+  background-color: #32D37410 !important; /* 10 = 6% opacity */
+}
+.custom-green-border {
+  border-color: #32D374 !important;
+}
+
+
 
 @keyframes slide-top {
     0% {

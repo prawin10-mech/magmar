@@ -4,17 +4,17 @@ import Image from 'next/image';
 
 // The images, using public/assets
 const logos = [
-  '/assets/1-01.png',
-  '/assets/3-01.png',
-  '/assets/4-01.png',
-  '/assets/5-01.png',
-  '/assets/6-01.png',
-  '/assets/7-01.png',
-  '/assets/8-01.png',
-  '/assets/9-01.png',
-  '/assets/10-01.png',
-  '/assets/11-01.png',
-  '/assets/12-01.png',
+  '/assets/wallet/1-01.png',
+  '/assets/wallet/3-01.png',
+  '/assets/wallet/5-01.png',
+  '/assets/wallet/6-01.png',
+  '/assets/wallet/7-01.png',
+  '/assets/wallet/8-01.png',
+  '/assets/wallet/9-01.png',
+  '/assets/wallet/10-01.png',
+  '/assets/wallet/11-01.png',
+  '/assets/wallet/12-01.png',
+  '/assets/wallet/13-01.png',
 ];
 
 // Custom Marquee Component

@@ -1,6 +1,6 @@
 <svg width="1512" height="982" viewBox="0 0 1512 982" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_4082_5286)">
-<rect width="1512" height="982" fill="#080808"/>
+<rect width="1512" height="982" fill="#000"/>
 <g filter="url(#filter0_f_4082_5286)">
 <ellipse cx="194.711" cy="265.847" rx="194.711" ry="265.847" transform="matrix(0.213677 0.976904 -0.968507 0.248986 327.951 164.175)" fill="url(#paint0_linear_4082_5286)"/>
 </g>
@@ -436,12 +436,12 @@
 <feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_4082_5286"/>
 </filter>
 <linearGradient id="paint0_linear_4082_5286" x1="25.9058" y1="-99.6927" x2="496.323" y2="-70.3303" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00c531"/>
-<stop offset="1" stop-color="#00ad2b"/>
+<stop stop-color="#C55002"/>
+<stop offset="1" stop-color="#AD2A01"/>
 </linearGradient>
 <linearGradient id="paint1_linear_4082_5286" x1="40.803" y1="-105.406" x2="778.247" y2="-36.8366" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00c531"/>
-<stop offset="1" stop-color="#00ad2b"/>
+<stop stop-color="#C55002"/>
+<stop offset="1" stop-color="#AD2A01"/>
 </linearGradient>
 <clipPath id="clip0_4082_5286">
 <rect width="1512" height="982" fill="white"/>

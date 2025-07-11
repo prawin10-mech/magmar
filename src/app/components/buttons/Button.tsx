@@ -1,14 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function Button({ text, variant = "primary" }: {text:string, variant?:string, className?:string, type?:string}) {
+interface ButtonProps {
+  text: string;
+  variant?: "primary" | "secondary";
+  className?: string;
+  type?: "button" | "submit" | "reset";
+}
+
+export default function Button({
+  text,
+  variant = "primary",
+  className = "",
+  type = "button",
+}: ButtonProps) {
   return (
     <div className="button-container">
-      {" "}
-      <div className="sm:mt-[1%] mt-[3%]  items-center gap-5">
+      <div className="sm:mt-[1%] mt-[3%] items-center gap-5">
         <motion.button
-          initial={{ "--x": "100%", scale: 1 }}
-          animate={{ "--x": "-100%" }}
+          type={type}
+          initial={{ "--x": "100%", scale: 1 } as any}
+          animate={{ "--x": "-100%" } as any}
           whileTap={{ scale: 0.97 }}
           transition={{
             repeat: Infinity,
@@ -25,13 +37,13 @@ export default function Button({ text, variant = "primary" }: {text:string, vari
               mass: 0.1,
             },
           }}
-          className={`rounded-[8px] px-5 py-2.5 relative ${
+          className={`rounded-[8px] px-5 py-2.5 relative font-medium tracking-wide ${
             variant === "primary"
               ? "radial-gradient text-white"
-              : "bg-[#fd1d1d] hover:bg-[#fd1d1d] text-white"
-          }`}
+              : "bg-[#18714b] hover:bg-[#145539] text-white"
+          } ${className}`}
         >
-          <span className="  tracking-wide font-medium h-full w-full block relative linear-mask">
+          <span className="block w-full h-full relative linear-mask">
             {text}
           </span>
           <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
