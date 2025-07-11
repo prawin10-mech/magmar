@@ -263,7 +263,7 @@ const Navbar: React.FC = () => {
                 </a>
               </div>
               <a
-                href="https://app.magmarinfra.com/login"
+                href="https://app-cashback-next.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -392,7 +392,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="w-full mt-4">
             <a
-              href="https://app.magmarinfra.com/login"
+              href="https://app-cashback-next.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full"

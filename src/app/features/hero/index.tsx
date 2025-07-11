@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://app.magmarinfra.com/login"
+              href="https://app-cashback-next.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
