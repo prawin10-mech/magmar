@@ -15,6 +15,7 @@ const getBlogPost = (slug: string) => {
 
 export default function BlogDetailsPage() {
   const params = useParams();
+  console.log(params)
   const slug = typeof params.slug === "string" ? params.slug : Array.isArray(params.slug) ? params.slug[0] : "";
   const post = getBlogPost(slug);
 
@@ -44,7 +45,7 @@ export default function BlogDetailsPage() {
       <div
         className="min-h-screen pt-[200px]"
         style={{
-          backgroundImage: `url("/assets/bg.svg"})`,
+          backgroundImage: `url("/assets/bg.svg")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

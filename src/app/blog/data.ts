@@ -128,7 +128,7 @@ export const blogPosts = [
       date: "Mar 20, 2025",
       readTime: "8 min",
       category: "Technical",
-      image: "/blog/The Death of Seed Phrases.png",
+      image: "/assets/blog/The Death of Seed Phrases.png",
       slug: "the-death-of-seed-phrases-exploring-social-recovery-in-magmar",
       featured: true,
     },
@@ -304,7 +304,7 @@ export const blogPosts = [
       date: "Apr 15, 2025",
       readTime: "6 min",
       category: "Technical",
-      image: "/blog/Top 10 Use Cases.png",
+      image: "/assets/blog/Top 10 Use Cases.png",
       slug: "top-10-use-cases-that-magmar-unlocks-for-developers",
     },
     {
@@ -466,7 +466,7 @@ export const blogPosts = [
       date: "Nov 28, 2024",
       readTime: "8 min",
       category: "Innovation",
-      image: "/blog/How AI-Powered Smart Accounts.png",
+      image: "/assets/blog/How AI-Powered Smart Accounts.png",
       slug: "how-ai-powered-smart-accounts-will-change-blockchain-interaction",
     },
     {
@@ -792,7 +792,7 @@ export const blogPosts = [
       date: "Dec 3, 2024",
       readTime: "7 min",
       category: "Adoption",
-      image: "/blog/Why Gasless Transactions Are the Key.png",
+      image: "/assets/blog/Why Gasless Transactions Are the Key.png",
       slug: "why-gasless-transactions-are-key-to-mainstream-web3-adoption",
     },
   ];
